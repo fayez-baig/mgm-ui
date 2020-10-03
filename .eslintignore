@@ -1,0 +1,14 @@
+public/
+
+node_modules/
+
+dist/
+
+__snapshots__/
+
+coverage/
+
+storybook-static/
+
+styles.module.css
+
