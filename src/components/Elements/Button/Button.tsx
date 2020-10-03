@@ -14,18 +14,21 @@ const Button: React.FC<ButtonProps> = ({
 	type,
 	isFocused,
 	isLoading,
-	isRounded
+	isRounded,
+	isFullWidth
 }) => {
-	const btnStylesArr = ['button'];
-	if (bgColor !== 'default') btnStylesArr.push(`is-${bgColor}`);
-	if (size !== 'default') btnStylesArr.push(`is-${size}`);
-	if (isLightBg) btnStylesArr.push('is-light');
-	if (isOutlined) btnStylesArr.push('is-outlined');
-	if (isInverted) btnStylesArr.push('is-inverted');
-	if (isRounded) btnStylesArr.push('is-rounded');
-	if (isFocused) btnStylesArr.push('is-focused');
-	if (isLoading) btnStylesArr.push('is-loading');
-	const classes = getStyles(btnStylesArr);
+	let str = 'button,';
+	str += bgColor !== 'default' ? `is-${bgColor},` : '';
+	str += size !== 'default' ? `is-${size},` : '';
+	str += isLightBg ? 'is-light,' : '';
+	str += isOutlined ? 'is-outlined,' : '';
+	str += isInverted ? 'is-inverted,' : '';
+	str += isRounded ? 'is-rounded,' : '';
+	str += isFocused ? 'is-focused,' : '';
+	str += isLoading ? 'is-loading,' : '';
+	str += isFullWidth ? 'is-fullwidth,' : '';
+
+	const classes = getStyles(str.split(','));
 
 	return (
 		<button

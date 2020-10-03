@@ -35,6 +35,11 @@ export default {
 				type: 'boolean'
 			}
 		},
+		isFullWidth: {
+			control: {
+				type: 'boolean'
+			}
+		},
 		isInverted: {
 			control: {
 				type: 'boolean'

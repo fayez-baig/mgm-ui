@@ -15,6 +15,7 @@ export interface ButtonProps {
 	children: string;
 	disabled?: boolean;
 	isFocused?: boolean;
+	isFullWidth?: boolean;
 	isInverted?: boolean;
 	isLightBg?: boolean;
 	isLoading?: boolean;
@@ -30,6 +31,7 @@ export const defaultProps: ButtonProps = {
 	children: 'Click Me',
 	disabled: false,
 	isFocused: false,
+	isFullWidth: false,
 	isInverted: false,
 	isLightBg: false,
 	isLoading: false,
