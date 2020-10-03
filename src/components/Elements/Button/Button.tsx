@@ -18,15 +18,15 @@ const Button: React.FC<ButtonProps> = ({
 	isFullWidth
 }) => {
 	let str = 'button,';
-	str += bgColor !== 'default' ? `is-${bgColor},` : '';
-	str += size !== 'default' ? `is-${size},` : '';
-	str += isLightBg ? 'is-light,' : '';
-	str += isOutlined ? 'is-outlined,' : '';
-	str += isInverted ? 'is-inverted,' : '';
-	str += isRounded ? 'is-rounded,' : '';
-	str += isFocused ? 'is-focused,' : '';
-	str += isLoading ? 'is-loading,' : '';
-	str += isFullWidth ? 'is-fullwidth,' : '';
+	bgColor !== 'default' && (str += `is-${bgColor},`);
+	size !== 'default' && (str += `is-${size},`);
+	isLightBg && (str += 'is-light,');
+	isOutlined && (str += 'is-outlined,');
+	isInverted && (str += 'is-inverted,');
+	isRounded && (str += 'is-rounded,');
+	isFocused && (str += 'is-focused,');
+	isLoading && (str += 'is-loading,');
+	isFullWidth && (str += 'is-fullwidth,');
 
 	const classes = getStyles(str.split(','));
 
