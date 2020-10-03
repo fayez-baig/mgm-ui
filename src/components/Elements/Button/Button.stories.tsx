@@ -2,13 +2,26 @@ import { Story } from '@storybook/react/types-6-0';
 import React from 'react';
 import Button from '../Button/Button';
 import { ButtonProps } from '../Button/types';
-import { bgColor, size, type } from '../../utils/constants';
+
+const bgColorValues = [
+	'default',
+	'primary',
+	'info',
+	'link',
+	'success',
+	'warning',
+	'danger'
+];
+
+const sizeValues = ['default', 'normal', 'small', 'medium', 'large'];
+
+const typeValues = ['submit', 'button', 'reset'];
 
 export default {
 	argTypes: {
 		bgColor: {
 			control: {
-				options: bgColor,
+				options: bgColorValues,
 				type: 'iniline-radio'
 			}
 		},
@@ -49,13 +62,13 @@ export default {
 		},
 		size: {
 			control: {
-				options: size,
+				options: sizeValues,
 				type: 'iniline-radio'
 			}
 		},
 		type: {
 			control: {
-				options: type,
+				options: typeValues,
 				type: 'inline-radio'
 			}
 		}
@@ -77,9 +90,9 @@ Default.args = {
 
 const smallButtonTemplate: Story<ButtonProps> = args => <Button {...args} />;
 
-const mormalButtonTemplate: Story<ButtonProps> = args => <Button {...args} />;
+const normalButtonTemplate: Story<ButtonProps> = args => <Button {...args} />;
 
-export const Normal = mormalButtonTemplate.bind({});
+export const Normal = normalButtonTemplate.bind({});
 
 Normal.args = {
 	bgColor: 'primary',
