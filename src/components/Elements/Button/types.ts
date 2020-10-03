@@ -15,12 +15,12 @@ export interface ButtonProps {
 	children: string;
 	disabled?: boolean;
 	isFocused?: boolean;
-	isInvertedText?: boolean;
+	isInverted?: boolean;
 	isLightBg?: boolean;
 	isLoading?: boolean;
-	isOutLined?: boolean;
+	isOutlined?: boolean;
 	isRounded?: boolean;
-	onClick?: (event: MouseEvent) => void;
+	onClick?: () => void;
 	size?: Size;
 	type?: ButtonType;
 }
@@ -30,10 +30,10 @@ export const defaultProps: ButtonProps = {
 	children: 'Click Me',
 	disabled: false,
 	isFocused: false,
-	isInvertedText: false,
+	isInverted: false,
 	isLightBg: false,
 	isLoading: false,
-	isOutLined: false,
+	isOutlined: false,
 	isRounded: false,
 	size: 'default',
 	type: 'button'

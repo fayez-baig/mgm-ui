@@ -9,7 +9,7 @@ export default {
 		bgColor: {
 			control: {
 				options: bgColor,
-				type: 'select'
+				type: 'iniline-radio'
 			}
 		},
 		disabled: {
@@ -22,7 +22,7 @@ export default {
 				type: 'boolean'
 			}
 		},
-		isInvertedText: {
+		isInverted: {
 			control: {
 				type: 'boolean'
 			}
@@ -37,7 +37,7 @@ export default {
 				type: 'boolean'
 			}
 		},
-		isOutLined: {
+		isOutlined: {
 			control: {
 				type: 'boolean'
 			}
@@ -50,7 +50,7 @@ export default {
 		size: {
 			control: {
 				options: size,
-				type: 'select'
+				type: 'iniline-radio'
 			}
 		},
 		type: {
