@@ -16,16 +16,16 @@ const Button: React.FC<ButtonProps> = ({
 	isLoading,
 	isRounded
 }) => {
-	const arr = ['button'];
-	if (bgColor !== 'default') arr.push(`is-${bgColor}`);
-	if (size !== 'default') arr.push(`is-${size}`);
-	if (isLightBg) arr.push('is-light');
-	if (isOutlined) arr.push('is-outlined');
-	if (isInverted) arr.push('is-inverted');
-	if (isRounded) arr.push('is-rounded');
-	if (isFocused) arr.push('is-focused');
-	if (isLoading) arr.push('is-loading');
-	const classes = getStyles(arr);
+	const btnStylesArr = ['button'];
+	if (bgColor !== 'default') btnStylesArr.push(`is-${bgColor}`);
+	if (size !== 'default') btnStylesArr.push(`is-${size}`);
+	if (isLightBg) btnStylesArr.push('is-light');
+	if (isOutlined) btnStylesArr.push('is-outlined');
+	if (isInverted) btnStylesArr.push('is-inverted');
+	if (isRounded) btnStylesArr.push('is-rounded');
+	if (isFocused) btnStylesArr.push('is-focused');
+	if (isLoading) btnStylesArr.push('is-loading');
+	const classes = getStyles(btnStylesArr);
 
 	return (
 		<button
