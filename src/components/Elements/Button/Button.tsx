@@ -8,7 +8,7 @@ const Button: React.SFC<ButtonProps> = () => {
 	return (
 		<>
 			<button type='button' className={classes}>
-				Click Me!!
+				Click Me!
 			</button>
 		</>
 	);
