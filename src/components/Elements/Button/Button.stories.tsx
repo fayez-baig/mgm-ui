@@ -22,7 +22,7 @@ export default {
 		bgColor: {
 			control: {
 				options: bgColorValues,
-				type: 'iniline-radio'
+				type: 'inline-radio'
 			}
 		},
 		disabled: {
@@ -63,7 +63,7 @@ export default {
 		size: {
 			control: {
 				options: sizeValues,
-				type: 'iniline-radio'
+				type: 'inline-radio'
 			}
 		},
 		type: {
