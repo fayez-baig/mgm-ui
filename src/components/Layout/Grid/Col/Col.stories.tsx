@@ -69,9 +69,7 @@ const renderOtherColumns = (cls: string) => {
 								padding: '16px 0px',
 								textAlign: 'center'
 							}}>
-							<code>
-								{isNumberedCol ? 1 + +col + ++i : 'Auto'}
-							</code>
+							<code>{isNumberedCol ? 1 + +col + ++i : 'Auto'}</code>
 						</p>
 					</Col>
 				))}
