@@ -60,8 +60,6 @@
 		"README.md"
 	],
 	"devDependencies": {
-		"react-cookie": "^4.0.3",
-		"react-hotkeys": "^2.0.0",
 		"@babel/cli": "^7.8.4",
 		"@babel/eslint-plugin": "^7.11.3",
 		"@babel/plugin-proposal-export-default-from": "^7.8.3",
