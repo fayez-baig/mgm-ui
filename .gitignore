@@ -2,6 +2,7 @@ node_modules/
 dist/
 __snapshots__/
 coverage/
-
+.vscode/
+.firebase/
 storybook-static/
 *.log
