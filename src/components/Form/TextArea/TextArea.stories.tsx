@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import Input from '../Input/Input';
-import { InputProps } from '../Input/types';
+import TextArea from '../TextArea/TextArea';
+import { TextAreaProps } from '../TextArea/types';
 
 const colorValues = [
 	'default',
@@ -15,8 +15,6 @@ const colorValues = [
 
 const sizeValues = ['default', 'normal', 'small', 'medium', 'large'];
 
-const typeValues = ['text', 'email', 'password'];
-
 export default {
 	argTypes: {
 		color: {
@@ -26,6 +24,11 @@ export default {
 			}
 		},
 		disabled: {
+			control: {
+				type: 'boolean'
+			}
+		},
+		fixedSize: {
 			control: {
 				type: 'boolean'
 			}
@@ -50,9 +53,10 @@ export default {
 				type: 'boolean'
 			}
 		},
-		isStatic: {
+		loaderSize: {
 			control: {
-				type: 'boolean'
+				options: sizeValues,
+				type: 'inline-radio'
 			}
 		},
 		name: {
@@ -70,15 +74,14 @@ export default {
 				type: 'boolean'
 			}
 		},
+		rows: {
+			control: {
+				type: 'number'
+			}
+		},
 		size: {
 			control: {
 				options: sizeValues,
-				type: 'inline-radio'
-			}
-		},
-		type: {
-			control: {
-				options: typeValues,
 				type: 'inline-radio'
 			}
 		},
@@ -88,13 +91,15 @@ export default {
 			}
 		}
 	},
-	component: Input,
-	title: 'Form/Input'
+	component: TextArea,
+	title: 'Form/TextArea'
 };
 
-const defaultInputTemplate: Story<InputProps> = args => <Input {...args} />;
+const defaultTextAreaTemplate: Story<TextAreaProps> = args => (
+	<TextArea {...args} />
+);
 
-export const Default = defaultInputTemplate.bind({});
+export const Default = defaultTextAreaTemplate.bind({});
 
 Default.args = {
 	color: 'default',
@@ -102,9 +107,11 @@ Default.args = {
 	size: 'default'
 };
 
-const normalInputTemplate: Story<InputProps> = args => <Input {...args} />;
+const normalTextAreaTemplate: Story<TextAreaProps> = args => (
+	<TextArea {...args} />
+);
 
-export const Normal = normalInputTemplate.bind({});
+export const Normal = normalTextAreaTemplate.bind({});
 
 Normal.args = {
 	color: 'default',
@@ -112,9 +119,11 @@ Normal.args = {
 	size: 'normal'
 };
 
-const smallInputTemplate: Story<InputProps> = args => <Input {...args} />;
+const smallTextAreaTemplate: Story<TextAreaProps> = args => (
+	<TextArea {...args} />
+);
 
-export const Small = smallInputTemplate.bind({});
+export const Small = smallTextAreaTemplate.bind({});
 
 Small.args = {
 	color: 'default',
@@ -122,9 +131,11 @@ Small.args = {
 	size: 'small'
 };
 
-const mediumInputTemplate: Story<InputProps> = args => <Input {...args} />;
+const mediumTextAreaTemplate: Story<TextAreaProps> = args => (
+	<TextArea {...args} />
+);
 
-export const Medium = mediumInputTemplate.bind({});
+export const Medium = mediumTextAreaTemplate.bind({});
 
 Medium.args = {
 	color: 'default',
@@ -132,9 +143,11 @@ Medium.args = {
 	size: 'medium'
 };
 
-const largeInputTemplate: Story<InputProps> = args => <Input {...args} />;
+const largeTextAreaTemplate: Story<TextAreaProps> = args => (
+	<TextArea {...args} />
+);
 
-export const Large = mediumInputTemplate.bind({});
+export const Large = mediumTextAreaTemplate.bind({});
 
 Medium.args = {
 	color: 'default',
