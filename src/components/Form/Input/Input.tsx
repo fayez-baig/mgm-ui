@@ -1,6 +1,7 @@
 import React from 'react';
 import { getStyles } from '../../styles/getStyles';
 import { InputProps, defaultProps } from './types';
+import LoadingWrapper from './../LoadingWrapper/LoadingWrapper';
 
 const Input: React.FC<InputProps> = ({
 	color,
@@ -19,10 +20,6 @@ const Input: React.FC<InputProps> = ({
 	isFocused && (inputClassesStr += 'is-focused,');
 
 	const classes = getStyles(inputClassesStr.split(','));
-
-	const LoadingWrapper = ({ children }: any) => (
-		<div className={getStyles(['control', 'is-loading'])}>{children}</div>
-	);
 
 	const inputComponent = <input className={classes} {...inputProps} />;
 
