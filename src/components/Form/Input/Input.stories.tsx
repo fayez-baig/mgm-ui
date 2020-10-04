@@ -93,7 +93,6 @@ export const Default = defaultInputTemplate.bind({});
 
 Default.args = {
 	color: 'default',
-	placeHolder: 'Type something...',
 	size: 'default'
 };
 
@@ -103,7 +102,6 @@ export const Normal = normalInputTemplate.bind({});
 
 Normal.args = {
 	color: 'default',
-	placeHolder: 'Type something...',
 	size: 'normal'
 };
 
@@ -113,7 +111,6 @@ export const Small = smallInputTemplate.bind({});
 
 Small.args = {
 	color: 'default',
-	placeHolder: 'Type something...',
 	size: 'small'
 };
 
@@ -123,16 +120,14 @@ export const Medium = mediumInputTemplate.bind({});
 
 Medium.args = {
 	color: 'default',
-	placeHolder: 'Type something...',
 	size: 'medium'
 };
 
 const largeInputTemplate: Story<InputProps> = args => <Input {...args} />;
 
-export const Large = mediumInputTemplate.bind({});
+export const Large = largeInputTemplate.bind({});
 
-Medium.args = {
+Large.args = {
 	color: 'default',
-	placeHolder: 'Type something...',
 	size: 'large'
 };
