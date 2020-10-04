@@ -23,7 +23,7 @@ export interface InputProps {
 	readOnly?: boolean;
 	size?: Size;
 	type?: InputType;
-	value: string;
+	value?: string;
 }
 
 export const defaultProps: InputProps = {
@@ -35,6 +35,5 @@ export const defaultProps: InputProps = {
 	placeHolder: 'Type Something here...',
 	readOnly: false,
 	size: 'default',
-	type: 'text',
-	value: 'I am back'
+	type: 'text'
 };
