@@ -20,7 +20,7 @@ export interface InputProps {
 	isStatic?: boolean;
 	name?: string;
 	onChange?: () => void;
-	placeHolder?: string;
+	placeholder?: string;
 	readOnly?: boolean;
 	size?: Size;
 	type: InputType;
@@ -34,7 +34,7 @@ export const defaultProps: InputProps = {
 	isLoading: false,
 	isRounded: false,
 	isStatic: false,
-	placeHolder: 'Type Something here...',
+	placeholder: 'Type Something here...',
 	readOnly: false,
 	size: 'default',
 	type: 'text'

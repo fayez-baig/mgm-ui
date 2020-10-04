@@ -9,27 +9,28 @@ const Input: React.FC<InputProps> = ({
 	isStatic,
 	size,
 	isLoading,
-	placeHolder,
 	...inputProps
 }) => {
-	let intutClassesStr = 'input,';
-	color !== 'default' && (intutClassesStr += `is-${color},`);
-	size !== 'default' && (intutClassesStr += `is-${size},`);
-	isStatic && (intutClassesStr += 'is-static,');
-	isRounded && (intutClassesStr += 'is-rounded,');
-	isFocused && (intutClassesStr += 'is-focused,');
+	let inputClassesStr = 'input,';
+	color !== 'default' && (inputClassesStr += `is-${color},`);
+	size !== 'default' && (inputClassesStr += `is-${size},`);
+	isStatic && (inputClassesStr += 'is-static,');
+	isRounded && (inputClassesStr += 'is-rounded,');
+	isFocused && (inputClassesStr += 'is-focused,');
 
-	const classes = getStyles(intutClassesStr.split(','));
+	const classes = getStyles(inputClassesStr.split(','));
 
-	const Wrapper = ({ children }: any) => (
+	const LoadingWrapper = ({ children }: any) => (
 		<div className={getStyles(['control', 'is-loading'])}>{children}</div>
 	);
 
-	const inputComponent = (
-		<input className={classes} placeholder={placeHolder} {...inputProps} />
-	);
+	const inputComponent = <input className={classes} {...inputProps} />;
 
-	return isLoading ? <Wrapper>{inputComponent}</Wrapper> : inputComponent;
+	return isLoading ? (
+		<LoadingWrapper>{inputComponent}</LoadingWrapper>
+	) : (
+		inputComponent
+	);
 };
 
 Input.defaultProps = defaultProps;
