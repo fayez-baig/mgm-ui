@@ -10,12 +10,7 @@ const LoadingWrapper: React.FC<LoadingWrapperProps> = ({
 	loaderSize,
 	children
 }) => (
-	<div
-		className={getStyles([
-			'control',
-			'is-loading',
-			loaderSize === undefined ? '' : loaderSize
-		])}>
+	<div className={getStyles(['control', 'is-loading', loaderSize ?? ''])}>
 		{children}
 	</div>
 );
