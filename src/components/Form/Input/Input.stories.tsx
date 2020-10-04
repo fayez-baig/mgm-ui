@@ -30,6 +30,11 @@ export default {
 				type: 'boolean'
 			}
 		},
+		id: {
+			control: {
+				type: 'text'
+			}
+		},
 		isFocused: {
 			control: {
 				type: 'boolean'
@@ -43,6 +48,11 @@ export default {
 		isStatic: {
 			control: {
 				type: 'boolean'
+			}
+		},
+		name: {
+			control: {
+				type: 'text'
 			}
 		},
 		readOnly: {
@@ -60,6 +70,11 @@ export default {
 			control: {
 				options: typeValues,
 				type: 'inline-radio'
+			}
+		},
+		value: {
+			control: {
+				type: 'text'
 			}
 		}
 	},

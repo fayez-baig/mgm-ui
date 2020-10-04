@@ -19,7 +19,7 @@ export interface InputProps {
 	isStatic?: boolean;
 	name?: string;
 	onChange?: () => void;
-	placeHolder: string;
+	placeHolder?: string;
 	readOnly?: boolean;
 	size?: Size;
 	type?: InputType;

@@ -4,18 +4,11 @@ import { InputProps, defaultProps } from './types';
 
 const Input: React.FC<InputProps> = ({
 	color,
-	disabled,
 	isFocused,
 	isRounded,
 	isStatic,
-	onChange,
-	placeHolder,
-	readOnly,
 	size,
-	type,
-	value,
-	name,
-	id
+	...inputProps
 }) => {
 	let str = 'input,';
 	color !== 'default' && (str += `is-${color},`);
@@ -26,19 +19,7 @@ const Input: React.FC<InputProps> = ({
 
 	const classes = getStyles(str.split(','));
 
-	return (
-		<input
-			className={classes}
-			type={type}
-			value={value}
-			placeholder={placeHolder}
-			disabled={disabled}
-			readOnly={readOnly}
-			onChange={onChange}
-			name={name}
-			id={id}
-		/>
-	);
+	return <input className={classes} {...inputProps} />;
 };
 
 Input.defaultProps = defaultProps;
