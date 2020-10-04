@@ -40,6 +40,11 @@ export default {
 				type: 'boolean'
 			}
 		},
+		isLoading: {
+			control: {
+				type: 'boolean'
+			}
+		},
 		isRounded: {
 			control: {
 				type: 'boolean'

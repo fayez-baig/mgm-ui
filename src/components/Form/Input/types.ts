@@ -15,6 +15,7 @@ export interface InputProps {
 	disabled?: boolean;
 	id?: string;
 	isFocused?: boolean;
+	isLoading?: boolean;
 	isRounded?: boolean;
 	isStatic?: boolean;
 	name?: string;
@@ -22,7 +23,7 @@ export interface InputProps {
 	placeHolder?: string;
 	readOnly?: boolean;
 	size?: Size;
-	type?: InputType;
+	type: InputType;
 	value?: string;
 }
 
@@ -30,6 +31,7 @@ export const defaultProps: InputProps = {
 	color: 'primary',
 	disabled: false,
 	isFocused: false,
+	isLoading: false,
 	isRounded: false,
 	isStatic: false,
 	placeHolder: 'Type Something here...',

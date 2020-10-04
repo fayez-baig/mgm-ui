@@ -8,18 +8,28 @@ const Input: React.FC<InputProps> = ({
 	isRounded,
 	isStatic,
 	size,
+	isLoading,
+	placeHolder,
 	...inputProps
 }) => {
-	let str = 'input,';
-	color !== 'default' && (str += `is-${color},`);
-	size !== 'default' && (str += `is-${size},`);
-	isStatic && (str += 'is-static,');
-	isRounded && (str += 'is-rounded,');
-	isFocused && (str += 'is-focused,');
+	let intutClassesStr = 'input,';
+	color !== 'default' && (intutClassesStr += `is-${color},`);
+	size !== 'default' && (intutClassesStr += `is-${size},`);
+	isStatic && (intutClassesStr += 'is-static,');
+	isRounded && (intutClassesStr += 'is-rounded,');
+	isFocused && (intutClassesStr += 'is-focused,');
 
-	const classes = getStyles(str.split(','));
+	const classes = getStyles(intutClassesStr.split(','));
 
-	return <input className={classes} {...inputProps} />;
+	return (
+		<div className={isLoading ? getStyles(['control', 'is-loading']) : ''}>
+			<input
+				className={classes}
+				placeholder={placeHolder}
+				{...inputProps}
+			/>
+		</div>
+	);
 };
 
 Input.defaultProps = defaultProps;
