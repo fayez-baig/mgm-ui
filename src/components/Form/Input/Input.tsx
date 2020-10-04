@@ -21,15 +21,15 @@ const Input: React.FC<InputProps> = ({
 
 	const classes = getStyles(intutClassesStr.split(','));
 
-	return (
-		<div className={isLoading ? getStyles(['control', 'is-loading']) : ''}>
-			<input
-				className={classes}
-				placeholder={placeHolder}
-				{...inputProps}
-			/>
-		</div>
+	const Wrapper = ({ children }: any) => (
+		<div className={getStyles(['control', 'is-loading'])}>{children}</div>
 	);
+
+	const inputComponent = (
+		<input className={classes} placeholder={placeHolder} {...inputProps} />
+	);
+
+	return isLoading ? <Wrapper>{inputComponent}</Wrapper> : inputComponent;
 };
 
 Input.defaultProps = defaultProps;
