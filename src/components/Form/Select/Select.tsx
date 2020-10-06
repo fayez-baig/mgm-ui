@@ -10,7 +10,7 @@ const Select: React.FC<SelectProps> = ({
 	size,
 	isLoading,
 	multiple,
-	optionSize,
+	visibleOptionsLength,
 	value,
 	options,
 	...selectProps
@@ -26,7 +26,7 @@ const Select: React.FC<SelectProps> = ({
 
 	const selectComponent = (
 		<div className={classes}>
-			<select {...selectProps} size={optionSize} multiple={multiple}>
+			<select {...selectProps} size={visibleOptionsLength} multiple={multiple}>
 				{options?.map(option => (
 					<option key={option.value} value={option.value}>
 						{option.name}

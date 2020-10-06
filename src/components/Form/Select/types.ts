@@ -20,10 +20,10 @@ export interface SelectProps {
 	multiple?: boolean;
 	name?: string;
 	onChange?: () => void;
-	optionSize?: number;
 	options?: Array<number | string | any>;
 	size?: Size;
 	value?: Array<number | string>;
+	visibleOptionsLength?: number;
 }
 
 export const defaultProps: SelectProps = {

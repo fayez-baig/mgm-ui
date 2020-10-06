@@ -53,15 +53,15 @@ export default {
 				type: 'text'
 			}
 		},
-		optionSize: {
-			control: {
-				type: 'number'
-			}
-		},
 		size: {
 			control: {
 				options: sizeValues,
 				type: 'inline-radio'
+			}
+		},
+		visibleOptionsLength: {
+			control: {
+				type: 'number'
 			}
 		}
 	},
@@ -85,7 +85,7 @@ export const MultipleSelect = multipleSelectTemplate.bind({});
 MultipleSelect.args = {
 	color: 'default',
 	multiple: true,
-	optionSize: 4
+	visibleOptionsLength: 3
 };
 
 const normalSelectTemplate: Story<SelectProps> = args => <Select {...args} />;
