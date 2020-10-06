@@ -43,7 +43,7 @@ export default {
 				type: 'boolean'
 			}
 		},
-		multipleSelect: {
+		multiple: {
 			control: {
 				type: 'boolean'
 			}
@@ -53,7 +53,7 @@ export default {
 				type: 'text'
 			}
 		},
-		numberOfOptions: {
+		optionSize: {
 			control: {
 				type: 'number'
 			}
@@ -84,8 +84,8 @@ export const MultipleSelect = multipleSelectTemplate.bind({});
 
 MultipleSelect.args = {
 	color: 'default',
-	multipleSelect: true,
-	numberOfOptions: 4
+	multiple: true,
+	optionSize: 4
 };
 
 const normalSelectTemplate: Story<SelectProps> = args => <Select {...args} />;

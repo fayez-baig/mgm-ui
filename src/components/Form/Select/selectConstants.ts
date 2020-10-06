@@ -1,4 +1,4 @@
-export const listItems = [
+export const options = [
 	{
 		name: 'Select dropdown',
 		value: 'select'

@@ -1,6 +1,6 @@
-import { listItems } from './selectConstants';
+import { options } from './selectConstants';
 
-type InputColor =
+type SelectInputColor =
 	| 'default'
 	| 'primary'
 	| 'info'
@@ -12,16 +12,16 @@ type InputColor =
 type Size = 'default' | 'normal' | 'small' | 'medium' | 'large';
 
 export interface SelectProps {
-	color?: InputColor;
+	color?: SelectInputColor;
 	id?: string;
 	isFocused?: boolean;
 	isLoading?: boolean;
 	isRounded?: boolean;
-	listItems?: Array<number | string | any>;
-	multipleSelect?: boolean;
+	multiple?: boolean;
 	name?: string;
-	numberOfOptions?: number;
 	onChange?: () => void;
+	optionSize?: number;
+	options?: Array<number | string | any>;
 	size?: Size;
 	value?: Array<number | string>;
 }
@@ -31,6 +31,6 @@ export const defaultProps: SelectProps = {
 	isFocused: false,
 	isLoading: false,
 	isRounded: false,
-	listItems: listItems,
+	options,
 	size: 'default'
 };

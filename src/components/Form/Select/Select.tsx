@@ -9,10 +9,10 @@ const Select: React.FC<SelectProps> = ({
 	isRounded,
 	size,
 	isLoading,
-	multipleSelect,
-	numberOfOptions,
+	multiple,
+	optionSize,
 	value,
-	listItems,
+	options,
 	...selectProps
 }) => {
 	let selectClassesStr = 'select,';
@@ -21,15 +21,15 @@ const Select: React.FC<SelectProps> = ({
 	isRounded && (selectClassesStr += 'is-rounded,');
 	isFocused && (selectClassesStr += 'is-focused,');
 	isLoading && (selectClassesStr += 'is-loading');
-	multipleSelect && (selectClassesStr += 'is-multiple');
+	multiple && (selectClassesStr += 'is-multiple');
 	const classes = getStyles(selectClassesStr.split(','));
 
 	const selectComponent = (
 		<div className={classes}>
-			<select {...selectProps} multiple={multipleSelect} size={numberOfOptions}>
-				{listItems?.map(listItem => (
-					<option key={listItem.value} value={listItem.value}>
-						{listItem.name}
+			<select {...selectProps} size={optionSize} multiple={multiple}>
+				{options?.map(option => (
+					<option key={option.value} value={option.value}>
+						{option.name}
 					</option>
 				))}
 			</select>
