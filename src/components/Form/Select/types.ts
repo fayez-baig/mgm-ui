@@ -20,7 +20,7 @@ export interface SelectProps {
 	multiple?: boolean;
 	name?: string;
 	onChange?: () => void;
-	options?: Array<number | string | any>;
+	options?: Array<number | string | any | any>;
 	size?: Size;
 	value?: Array<number | string>;
 	visibleOptionsLength?: number;
