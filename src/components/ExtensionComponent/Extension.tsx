@@ -50,7 +50,10 @@ const ExtensionComponent: React.FC = () => {
 							'is-image',
 							'is-32x32'
 						])}>
-						<img src='https://bulma.io/images/placeholders/32x32.png' />
+						<img
+							src='https://bulma.io/images/placeholders/32x32.png'
+							alt='bulma'
+						/>
 					</div>
 					<div className={getExtStyles(['timeline-content'])}>
 						<p className={getExtStyles(['heading'])}>February 2016</p>
