@@ -9,16 +9,13 @@ const CheckBox: React.FC<CheckBoxProps> = ({
 	...otherCheckBoxProps
 }) => {
 	return (
-		<label
-			className={getStyles(['checkbox'])}
-			htmlFor={name}
-			disabled={disabled}>
+		<label className={getStyles(['checkbox'])} htmlFor={name}>
 			<input
 				type='checkbox'
 				disabled={disabled}
 				name={name}
 				{...otherCheckBoxProps}
-			/>{' '}
+			/>
 			{children}
 		</label>
 	);
