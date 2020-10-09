@@ -24,6 +24,7 @@ const defaultBoxTemplate: Story<BoxProps> = args => (
 					<img
 						src='https://bulma.io/images/placeholders/128x128.png'
 						alt='Image'
+						// todo comment to replace this woth Image component in future
 					/>
 				</figure>
 			</div>
