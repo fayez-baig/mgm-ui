@@ -23,7 +23,7 @@ export default {
 
 const defaultRadioTemplate: Story<RadioProps> = args => (
 	<>
-		<Radio {...args} id='female' htmlFor='female' value='female' disabled>
+		<Radio {...args} id='female' htmlFor='female' value='female'>
 			FEMALE
 		</Radio>
 		<Radio {...args} id='male' htmlFor='male' value='male'>
