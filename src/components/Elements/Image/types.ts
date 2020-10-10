@@ -24,13 +24,13 @@ type Size =
 	| 'fullwidth';
 export interface ImageProps {
 	alt?: string;
-	imageSize?: Size;
+	imageWidth?: Size;
 	isRounded?: boolean;
 	src: string;
 }
 
 export const defaultProps: ImageProps = {
-	alt: '128x128',
-	imageSize: '128x128',
+	alt: 'alt-text',
+	imageWidth: '128x128',
 	src: 'https://bulma.io/images/placeholders/64x64.png'
 };
