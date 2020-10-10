@@ -24,4 +24,6 @@ const defaultDeleteButtonTemplate: Story<DeleteButtonProps> = args => (
 
 export const Default = defaultDeleteButtonTemplate.bind({});
 
-Default.args = {};
+Default.args = {
+	btnSize: 'default'
+};

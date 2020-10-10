@@ -15,4 +15,6 @@ const DeleteButton: React.FC<DeleteButtonProps> = ({
 	return <button className={classes} {...otherDeleteBtnprops}></button>;
 };
 
+DeleteButton.defaultProps = defaultProps;
+
 export default DeleteButton;

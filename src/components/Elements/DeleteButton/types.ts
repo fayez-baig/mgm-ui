@@ -5,6 +5,6 @@ export interface DeleteButtonProps {
 	onClick?: () => void;
 }
 
-export const defaultProps = {
+export const defaultProps: DeleteButtonProps = {
 	btnSize: 'default'
 };
