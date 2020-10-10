@@ -1,5 +1,6 @@
 import { Story } from '@storybook/react/types-6-0';
 import React from 'react';
+import Text from '../../Elements/Text/Text';
 import Row from './Row/Row';
 import Col from './Col/Col';
 import { getStyles } from '../../styles/getStyles';
@@ -21,11 +22,11 @@ const defaultGridTemplate: Story = args => (
 			.fill(' ')
 			.map((col, i) => (
 				<Col key={i} {...args}>
-					<p
+					<Text
 						className={colContentClasses}
 						style={{ padding: '16px 0px', textAlign: 'center' }}>
 						<code>{col + ++i}</code>
-					</p>
+					</Text>
 				</Col>
 			))}
 	</Row>
