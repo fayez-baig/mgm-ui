@@ -1,6 +1,7 @@
 import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import Box from './Box';
+import Image from '../Image/Image';
 import { BoxProps } from './types';
 import { getStyles } from '../../styles/getStyles';
 
@@ -21,10 +22,11 @@ const defaultBoxTemplate: Story<BoxProps> = args => (
 		<article className={getStyles(['media'])}>
 			<div className={getStyles(['media-left'])}>
 				<figure className={getStyles(['image is-64x64'])}>
-					<img
+					<Image
 						src='https://bulma.io/images/placeholders/128x128.png'
-						alt='Image'
-						// todo comment to replace this woth Image component in future
+						imageSize='128x128'
+						isRounded
+						alt='alt-text'
 					/>
 				</figure>
 			</div>
