@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React components with Dark and Light Mode
 
-## Available Scripts
+## [Live Demo](https://mgm-ui.web.app/) 🔥
 
-In the project directory, you can run:
+### 📚 Docs
 
-### `npm start`
+See the [documentation](https://mgm-ui.web.app/) with live editable examples and API documention.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ⚙ Installation
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```shell
+$ npm install mgm-ui-lib
+```
 
-### `npm test`
+## 🎉 Usage
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here is a quick example to get you started, it's all you need:
 
-### `npm run build`
+```shell
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Button } from 'mgm-ui-lib';
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+function App() {
+  return (
+    <Button
+    bgColor="primary"
+    size="default"
+    type="button">
+    Click Me
+    </Button>
+  );
+}
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+ReactDOM.render(<App />, document.querySelector('#app'));
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌎 Cross-browser compatibility
 
-### `npm run eject`
+React-dark-light-ui is compatible with almost all the browsers available, including some legacy ones that are still used. This includes but is not limited to:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+✔️ Google Chrome
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✔️ Safari
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+✔️ Mozilla Firefox
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+✔️ Microsoft Edge
 
-## Learn More
+✔️ Internet Explorer 11 and more
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Looking for contributors 🚀
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This package is under development.... !
 
-### Code Splitting
+#### 🔗 Connect with me:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+<p align="center">
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=https://linkedin.com/in/coder-ninja target="blank"><img align="center" src="https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png" alt="coder-ninja" height="45" width="45" /></a> <a href="mailto: coderninja16@gmail.com" target="blank"><img align="center" src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-gmail-icon-download-png-and-vector-1.png" alt="coder-ninja" height="45" width="45" /></a><a href=https://github.com/fayez-baig target="blank"><img align="center" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="fayez-baig" height="55" width="55" /></a>
