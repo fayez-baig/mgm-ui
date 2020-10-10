@@ -11,6 +11,5 @@ export interface RadioProps {
 
 export const defaultProps: RadioProps = {
 	children: 'Check Me',
-	disabled: false,
-	name: 'radio'
+	disabled: false
 };
