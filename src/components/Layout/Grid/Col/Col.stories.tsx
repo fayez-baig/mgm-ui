@@ -3,6 +3,7 @@ import React from 'react';
 import Row from '../Row/Row';
 import Col from '../Col/Col';
 import { getStyles } from '../../../styles/getStyles';
+import Text from './../../../Elements/Text/Text';
 
 const colSizeMultipleOf20 = [
 	'is-four-fifths',
@@ -63,14 +64,14 @@ const renderOtherColumns = (cls: string) => {
 				.fill(' ')
 				.map((col, i) => (
 					<Col key={i}>
-						<p
+						<Text
 							className={otherColClasses}
 							style={{
 								padding: '16px 0px',
 								textAlign: 'center'
 							}}>
 							<code>{isNumberedCol ? 1 + +col + ++i : 'Auto'}</code>
-						</p>
+						</Text>
 					</Col>
 				))}
 		</>
@@ -85,11 +86,11 @@ const defaultColTemplate: Story = args => (
 			.fill(' ')
 			.map((_, i) => (
 				<Col key={i} {...args}>
-					<p
+					<Text
 						className={colContentClasses}
 						style={{ padding: '16px 0px', textAlign: 'center' }}>
 						<code>1</code>
-					</p>
+					</Text>
 				</Col>
 			))}
 		{args.colSize !== 'is-full' && renderOtherColumns(args.colSize)}
