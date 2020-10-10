@@ -3,6 +3,7 @@ export { default as Button } from './Elements/Button/Button';
 export { default as Block } from './Elements/Block/Block';
 export { default as Box } from './Elements/Box/Box';
 export { default as Image } from './Elements/Image/Image';
+export { default as Notification } from './Elements/Notification/Notification';
 export { default as DeleteButton } from './Elements/DeleteButton/DeleteButton';
 export { default as Text } from './Elements/Text/Text';
 
