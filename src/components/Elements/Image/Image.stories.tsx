@@ -36,7 +36,7 @@ export default {
 			}
 		},
 
-		imageWidth: {
+		imageSize: {
 			control: {
 				options: ImageSize,
 				type: 'select'
@@ -58,6 +58,6 @@ export const Default = defaultImageTemplate.bind({});
 
 Default.args = {
 	alt: 'alt-text',
-	imageWidth: '128x128',
+	imageSize: '128x128',
 	src: 'https://bulma.io/images/placeholders/128x128.png'
 };

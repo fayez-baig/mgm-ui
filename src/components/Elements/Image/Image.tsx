@@ -4,12 +4,12 @@ import { getStyles } from '../../styles/getStyles';
 
 const Image: React.FC<ImageProps> = ({
 	isRounded,
-	imageWidth,
+	imageSize,
 	alt,
 	...otherImageProps
 }) => {
 	let imageClassesStr = 'image,';
-	imageWidth && (imageClassesStr += `is-${imageWidth},`);
+	imageSize && (imageClassesStr += `is-${imageSize},`);
 
 	const classes = getStyles(imageClassesStr.split(','));
 
