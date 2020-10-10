@@ -11,12 +11,12 @@ type Size = 'default' | 'small' | 'medium' | 'large';
 
 export interface ProgressBarProps {
 	color?: Color;
-	max: number;
-	progressBarSize?: Size;
+	max?: number;
+	size?: Size;
 	value?: number;
 }
 
 export const defaultProps: ProgressBarProps = {
 	max: 100,
-	progressBarSize: 'default'
+	size: 'default'
 };

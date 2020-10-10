@@ -6,13 +6,12 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
 	children,
 	value,
 	color,
-	progressBarSize,
+	size,
 	...otherProgessBarProps
 }) => {
 	let progressBarClassesStr = 'progress,';
 	color !== 'default' && (progressBarClassesStr += `is-${color},`);
-	progressBarSize !== 'default' &&
-		(progressBarClassesStr += `is-${progressBarSize},`);
+	size !== 'default' && (progressBarClassesStr += `is-${size},`);
 
 	const classes = getStyles(progressBarClassesStr.split(','));
 	return (
@@ -21,5 +20,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
 		</progress>
 	);
 };
+
+ProgressBar.defaultProps = defaultProps;
 
 export default ProgressBar;

@@ -29,7 +29,7 @@ export default {
 				type: 'text'
 			}
 		},
-		progressBarSize: {
+		size: {
 			control: {
 				options: SizeValues,
 				type: 'inline-radio'
@@ -54,7 +54,7 @@ export const Default = defaultProgressBarTemplate.bind({});
 Default.args = {
 	color: 'default',
 	max: 100,
-	progressBarSize: 'default',
+	size: 'default',
 	value: 30
 };
 
@@ -67,5 +67,5 @@ export const Indeterminate = indeterminateProgressBarTemplate.bind({});
 Indeterminate.args = {
 	color: 'default',
 	max: 100,
-	progressBarSize: 'default'
+	size: 'default'
 };
