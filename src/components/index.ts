@@ -6,6 +6,9 @@ export { default as Image } from './Elements/Image/Image';
 export { default as Notification } from './Elements/Notification/Notification';
 export { default as DeleteButton } from './Elements/DeleteButton/DeleteButton';
 export { default as Text } from './Elements/Text/Text';
+export { default as Title } from './Elements/Title/Title';
+export { default as SubTitle } from './Elements/SubTitle/SubTitle';
+
 export { default as ProgressBar } from './Elements/ProgressBar/ProgressBar';
 
 //Form
