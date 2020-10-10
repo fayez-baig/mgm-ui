@@ -5,12 +5,6 @@ import { RadioProps } from './types';
 
 export default {
 	argTypes: {
-		checked: {
-			control: {
-				type: 'boolean'
-			}
-		},
-
 		children: {
 			control: {
 				type: 'text'
@@ -28,10 +22,10 @@ export default {
 
 const defaultRadioTemplate: Story<RadioProps> = args => (
 	<>
-		<Radio {...args} id='female' htmlFor='female' value='female'>
+		<Radio {...args} id='female' htmlFor='female' name='gender' value='female'>
 			FEMALE
 		</Radio>
-		<Radio {...args} id='male' htmlFor='male' value='male'>
+		<Radio {...args} id='male' htmlFor='male' name='gender' value='male'>
 			MALE
 		</Radio>
 	</>
