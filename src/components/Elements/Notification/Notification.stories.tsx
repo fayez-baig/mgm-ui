@@ -1,6 +1,7 @@
 import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import Notification from './Notification';
+import Text from '../Text/Text';
 import { NotificationProps } from './types';
 
 const backgroundColor = [
@@ -34,12 +35,11 @@ export default {
 
 const defaultNotificationTemplate: Story<NotificationProps> = args => (
 	<Notification {...args}>
-		{/* replace p with text component after all merge */}
-		<p>
+		<Text>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
 			eum temporibus numquam deserunt, quos fugiat ea, tenetur voluptatum ut
 			modi sed? Quo soluta modi eius possimus adipisci harum sequi cumque!
-		</p>
+		</Text>
 	</Notification>
 );
 
