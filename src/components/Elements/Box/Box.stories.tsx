@@ -7,13 +7,6 @@ import { getStyles } from '../../styles/getStyles';
 import Text from './../Text/Text';
 
 export default {
-	argTypes: {
-		children: {
-			control: {
-				type: 'text'
-			}
-		}
-	},
 	component: Box,
 	title: 'Elements/Box'
 };
@@ -48,7 +41,3 @@ const defaultBoxTemplate: Story<BoxProps> = args => (
 );
 
 export const Default = defaultBoxTemplate.bind({});
-
-Default.args = {
-	children: 'Check Me'
-};

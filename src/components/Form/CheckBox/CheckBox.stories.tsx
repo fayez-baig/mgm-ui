@@ -5,12 +5,17 @@ import { CheckBoxProps } from './types';
 
 export default {
 	argTypes: {
+		checked: {
+			control: {
+				type: 'boolean'
+			}
+		},
+
 		children: {
 			control: {
 				type: 'text'
 			}
 		},
-
 		disabled: {
 			control: {
 				type: 'boolean'

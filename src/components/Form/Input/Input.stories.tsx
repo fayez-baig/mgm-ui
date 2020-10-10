@@ -60,6 +60,11 @@ export default {
 				type: 'text'
 			}
 		},
+		placeholder: {
+			control: {
+				type: 'text'
+			}
+		},
 		readOnly: {
 			control: {
 				type: 'boolean'

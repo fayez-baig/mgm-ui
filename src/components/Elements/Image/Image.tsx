@@ -16,7 +16,7 @@ const Image: React.FC<ImageProps> = ({
 	return (
 		<figure className={classes}>
 			<img
-				className={isRounded ? 'is-rounded' : ''}
+				className={isRounded ? getStyles(['is-rounded']) : ''}
 				alt={alt}
 				{...otherImageProps}
 			/>
