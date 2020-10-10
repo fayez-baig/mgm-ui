@@ -2,6 +2,7 @@
 export { default as Button } from './Elements/Button/Button';
 export { default as Block } from './Elements/Block/Block';
 export { default as Box } from './Elements/Box/Box';
+export { default as DeleteButton } from './Elements/DeleteButton/DeleteButton';
 
 //Form
 export { default as Input } from './Form/Input/Input';
