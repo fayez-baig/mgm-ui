@@ -2,7 +2,7 @@ import React from 'react';
 import { TitleProps, defaultProps } from './types';
 import { getStyles } from '../../styles/getStyles';
 
-const Title: React.SFC<TitleProps> = ({ children, fontSize, isSpaced }) => {
+const Title: React.FC<TitleProps> = ({ children, fontSize, isSpaced }) => {
 	let titleClassesStr = 'title,';
 
 	fontSize && (titleClassesStr += `is-${fontSize},`);

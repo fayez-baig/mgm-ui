@@ -2,7 +2,7 @@ import React from 'react';
 import { SubTitleProps, defaultProps } from './types';
 import { getStyles } from '../../styles/getStyles';
 
-const SubTitle: React.SFC<SubTitleProps> = ({ children, fontSize }) => {
+const SubTitle: React.FC<SubTitleProps> = ({ children, fontSize }) => {
 	let titleClassesStr = 'subtitle,';
 
 	fontSize && (titleClassesStr += `is-${fontSize},`);
