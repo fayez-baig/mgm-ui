@@ -23,4 +23,6 @@ const Image: React.FC<ImageProps> = ({
 	);
 };
 
+Image.defaultProps = defaultProps;
+
 export default Image;
