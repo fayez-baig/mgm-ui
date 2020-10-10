@@ -15,7 +15,7 @@ const CheckBox: React.FC<CheckBoxProps> = ({
 				disabled={disabled}
 				name={name}
 				{...otherCheckBoxProps}
-			/>
+			/>{' '}
 			{children}
 		</label>
 	);
