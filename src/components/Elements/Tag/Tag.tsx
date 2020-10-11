@@ -24,7 +24,7 @@ const Tag: React.SFC<TagProps> = ({
 
 	return (
 		<span className={classes} onClick={onClick}>
-			{children}
+			{hasDeleteIcon ? null : children}
 			{hasDeleteBtn && <DeleteButton onClick={onClick} />}
 		</span>
 	);

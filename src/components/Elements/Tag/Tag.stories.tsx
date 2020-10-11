@@ -1,9 +1,9 @@
 import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import Tag from './Tag';
-import { TagProps, MultipleTagsProps } from './types';
-import MultipleTags from './MultipleTags';
-import Wrapper from './Wrapper';
+import { TagProps, AddonTagProps } from './types';
+import AddonTag from './AddonTag';
+import TagWrapper from './TagWrapper';
 
 const backgroundColor = [
 	'default',
@@ -76,50 +76,50 @@ Default.args = {
 	isRounded: false
 };
 
-const defaultMultipleTagTemplate: Story<MultipleTagsProps> = () => (
-	<MultipleTags>
+const defaultMultipleTagTemplate: Story<AddonTagProps> = () => (
+	<AddonTag>
 		<Tag bgColor='primary'>Tag Label</Tag>
 		<Tag bgColor='success'>Tag Label</Tag>
 		<Tag bgColor='info'>Tag Label</Tag>
-	</MultipleTags>
+	</AddonTag>
 );
 
-export const MultipleTag = defaultMultipleTagTemplate.bind({});
+export const MultipleTags = defaultMultipleTagTemplate.bind({});
 
-const defaultAttachedTagTemplate: Story<MultipleTagsProps> = () => (
-	<MultipleTags hasAddons>
+const addonTagTemplate: Story<AddonTagProps> = () => (
+	<AddonTag hasAddons>
 		<Tag bgColor='dark'>build</Tag>
 		<Tag bgColor='success'>passing</Tag>
-	</MultipleTags>
+	</AddonTag>
 );
 
-export const AttachedTag = defaultAttachedTagTemplate.bind({});
+export const AddonTagTemplate = addonTagTemplate.bind({});
 
-const defaultAttachedDeleteTagTemplate: Story<MultipleTagsProps> = () => (
-	<MultipleTags hasAddons>
+const addonWithDeleteTemplate: Story<AddonTagProps> = () => (
+	<AddonTag hasAddons>
 		<Tag bgColor='success'>Technologhy</Tag>
 		<Tag hasDeleteIcon></Tag>
-	</MultipleTags>
+	</AddonTag>
 );
 
-export const AttachedDeleteTag = defaultAttachedDeleteTagTemplate.bind({});
+export const AddonWithDeleteTemplate = addonWithDeleteTemplate.bind({});
 
-const groupedMultipleTagTemplate: Story<MultipleTagsProps> = () => (
-	<Wrapper>
-		<MultipleTags hasAddons>
+const wrappedTagTemplate: Story = () => (
+	<TagWrapper>
+		<AddonTag hasAddons>
 			<Tag bgColor='success'>Technologhy</Tag>
 			<Tag hasDeleteIcon></Tag>
-		</MultipleTags>
+		</AddonTag>
 
-		<MultipleTags hasAddons>
+		<AddonTag hasAddons>
 			<Tag bgColor='primary'>CSS</Tag>
 			<Tag hasDeleteIcon></Tag>
-		</MultipleTags>
-		<MultipleTags hasAddons>
+		</AddonTag>
+		<AddonTag hasAddons>
 			<Tag bgColor='dark'>Documentation</Tag>
 			<Tag hasDeleteIcon></Tag>
-		</MultipleTags>
-	</Wrapper>
+		</AddonTag>
+	</TagWrapper>
 );
 
-export const GroupedMultipleTag = groupedMultipleTagTemplate.bind({});
+export const WrappedTagTemplate = wrappedTagTemplate.bind({});

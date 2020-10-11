@@ -25,11 +25,11 @@ export interface TagProps {
 	tagSize?: TagSize;
 }
 
-export interface MultipleTagsProps {
+export interface AddonTagProps {
 	children?: ReactNode;
 	hasAddons?: boolean;
 }
 
-export interface WrapperProps {
+export interface TagWrapperProps {
 	children?: ReactNode;
 }

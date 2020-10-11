@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { WrapperProps } from './types';
+import { TagWrapperProps } from './types';
 import { getStyles } from '../../styles/getStyles';
 
-const Wrapper: React.FC<WrapperProps> = ({ children }) => {
+const TagWrapper: React.FC<TagWrapperProps> = ({ children }) => {
 	return (
 		<div className={getStyles(['field', 'is-grouped', 'is-grouped-multiline'])}>
 			{children}
@@ -10,4 +10,4 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
 	);
 };
 
-export default Wrapper;
+export default TagWrapper;
