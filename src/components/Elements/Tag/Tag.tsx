@@ -26,6 +26,7 @@ const Tag: React.SFC<TagProps> = ({
 		<span className={classes} onClick={onClick}>
 			{hasDeleteIcon ? null : children}
 			{hasDeleteBtn && <DeleteButton onClick={onClick} />}
+			{/* remove delete btn if it behave unexpectedly todo */}
 		</span>
 	);
 };
