@@ -53,16 +53,16 @@ export default {
 			control: {
 				type: 'boolean'
 			}
+		},
+		tagSize: {
+			control: {
+				options: tagSize,
+				type: 'inline-radio'
+			}
 		}
 	},
 
 	component: Tag,
-	tagSize: {
-		control: {
-			options: tagSize,
-			type: 'inline-radio'
-		}
-	},
 	title: 'Elements/Tag'
 };
 
