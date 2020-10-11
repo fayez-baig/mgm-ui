@@ -5,4 +5,5 @@ coverage/
 .vscode/
 .firebase/
 storybook-static/
+build/
 *.log
