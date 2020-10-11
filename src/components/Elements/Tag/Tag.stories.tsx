@@ -76,7 +76,7 @@ Default.args = {
 	isRounded: false
 };
 
-const defaultMultipleTagTemplate: Story<AddonTagProps> = () => (
+const defaultAddonTagTemplate: Story<AddonTagProps> = () => (
 	<AddonTag>
 		<Tag bgColor='primary'>Tag Label</Tag>
 		<Tag bgColor='success'>Tag Label</Tag>
@@ -84,7 +84,7 @@ const defaultMultipleTagTemplate: Story<AddonTagProps> = () => (
 	</AddonTag>
 );
 
-export const MultipleTags = defaultMultipleTagTemplate.bind({});
+export const AddonTags = defaultAddonTagTemplate.bind({});
 
 const addonTagTemplate: Story<AddonTagProps> = () => (
 	<AddonTag hasAddons>
