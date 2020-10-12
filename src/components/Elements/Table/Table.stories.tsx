@@ -7,6 +7,7 @@ import TableHeading from './TableHeading';
 import TBody from './TBody';
 import TableCell from './TableCell';
 import TableRow from './TableRow';
+import TFoot from './TFoot';
 
 export default {
 	argTypes: {
@@ -78,3 +79,48 @@ const defaultTableTemplate: Story<TableProps> = args => (
 );
 
 export const Default = defaultTableTemplate.bind({});
+
+const defaultTableWithFooterTemplate: Story<TableProps> = args => (
+	<Table {...args}>
+		<THead>
+			<TableHeading>Row</TableHeading>
+			<TableHeading>Col</TableHeading>
+			<TableHeading>Width</TableHeading>
+			<TableHeading>Height</TableHeading>
+		</THead>
+		<TBody>
+			<TableRow>
+				<TableCell>1</TableCell>
+				<TableCell>2</TableCell>
+				<TableCell>3</TableCell>
+				<TableCell>4</TableCell>
+			</TableRow>
+			<TableRow>
+				<TableCell>1</TableCell>
+				<TableCell>2</TableCell>
+				<TableCell>3</TableCell>
+				<TableCell>4</TableCell>
+			</TableRow>
+			<TableRow>
+				<TableCell>1</TableCell>
+				<TableCell>2</TableCell>
+				<TableCell>3</TableCell>
+				<TableCell>4</TableCell>
+			</TableRow>
+			<TableRow>
+				<TableCell>1</TableCell>
+				<TableCell>2</TableCell>
+				<TableCell>3</TableCell>
+				<TableCell>4</TableCell>
+			</TableRow>
+		</TBody>
+		<TFoot>
+			<TableHeading>Row</TableHeading>
+			<TableHeading>Col</TableHeading>
+			<TableHeading>Width</TableHeading>
+			<TableHeading>Height</TableHeading>
+		</TFoot>
+	</Table>
+);
+
+export const TableWithFooter = defaultTableWithFooterTemplate.bind({});
