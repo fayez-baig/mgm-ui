@@ -17,9 +17,9 @@ export { default as TagWrapper } from './Elements/Tag/TagWrapper';
 
 //Table
 export { default as Table } from './Elements/Table/Table';
-export { default as Thead } from './Elements/Table/Thead';
-export { default as Tfoot } from './Elements/Table/Tfoot';
-export { default as Tbody } from './Elements/Table/Tbody';
+export { default as THead } from './Elements/Table/THead';
+export { default as TFoot } from './Elements/Table/TFoot';
+export { default as TBody } from './Elements/Table/TBody';
 export { default as TableRow } from './Elements/Table/TableRow';
 export { default as TableHeading } from './Elements/Table/TableHeading';
 export { default as TableCell } from './Elements/Table/TableCell';
@@ -30,7 +30,6 @@ export { default as TextArea } from './Form/TextArea/TextArea';
 export { default as CheckBox } from './Form/CheckBox/CheckBox';
 export { default as Select } from './Form/Select/Select';
 export { default as Radio } from './Form/Radio/Radio';
-export { default as LoadingWrapper } from './Form/LoadingWrapper/LoadingWrapper';
 
 //Layout
 export { default as Row } from './Layout/Grid/Row/Row';

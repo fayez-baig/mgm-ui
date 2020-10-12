@@ -1,7 +1,7 @@
 import React from 'react';
 import { TableCellProps } from './types';
 
-const TableCell: React.SFC<TableCellProps> = ({ children }) => {
+const TableCell: React.FC<TableCellProps> = ({ children }) => {
 	return <td>{children}</td>;
 };
 

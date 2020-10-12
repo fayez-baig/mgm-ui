@@ -2,9 +2,9 @@ import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import Table from './Table';
 import { TableProps } from './types';
-import Thead from './Thead';
+import THead from './THead';
 import TableHeading from './TableHeading';
-import Tbody from './Tbody';
+import TBody from './TBody';
 import TableCell from './TableCell';
 import TableRow from './TableRow';
 
@@ -42,13 +42,13 @@ export default {
 
 const defaultTableTemplate: Story<TableProps> = args => (
 	<Table {...args}>
-		<Thead>
+		<THead>
 			<TableHeading>Row</TableHeading>
 			<TableHeading>Col</TableHeading>
 			<TableHeading>Width</TableHeading>
 			<TableHeading>Height</TableHeading>
-		</Thead>
-		<Tbody>
+		</THead>
+		<TBody>
 			<TableRow>
 				<TableCell>1</TableCell>
 				<TableCell>2</TableCell>
@@ -73,7 +73,7 @@ const defaultTableTemplate: Story<TableProps> = args => (
 				<TableCell>3</TableCell>
 				<TableCell>4</TableCell>
 			</TableRow>
-		</Tbody>
+		</TBody>
 	</Table>
 );
 

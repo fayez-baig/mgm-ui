@@ -1,7 +1,7 @@
 import React from 'react';
-import { TheadProps } from './types';
+import { THeadProps } from './types';
 
-const Thead: React.SFC<TheadProps> = ({ children }) => {
+const THead: React.FC<THeadProps> = ({ children }) => {
 	return (
 		<thead>
 			<tr>{children}</tr>
@@ -9,4 +9,4 @@ const Thead: React.SFC<TheadProps> = ({ children }) => {
 	);
 };
 
-export default Thead;
+export default THead;

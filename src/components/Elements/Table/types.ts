@@ -9,11 +9,11 @@ export interface TableProps {
 	isStriped?: boolean;
 }
 
-export interface TheadProps {
+export interface THeadProps {
 	children?: ReactNode;
 }
 
-export interface TfootProps {
+export interface TFootProps {
 	children?: ReactNode;
 }
 
@@ -29,7 +29,7 @@ export interface TableCellProps {
 	children?: ReactNode;
 }
 
-export interface TbodyProps {
+export interface TBodyProps {
 	children?: ReactNode;
 }
 

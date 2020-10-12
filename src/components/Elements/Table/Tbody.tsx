@@ -1,8 +1,8 @@
 import React from 'react';
-import { TbodyProps } from './types';
+import { TBodyProps } from './types';
 
-const Tbody: React.SFC<TbodyProps> = ({ children }) => {
+const TBody: React.FC<TBodyProps> = ({ children }) => {
 	return <tbody>{children}</tbody>;
 };
 
-export default Tbody;
+export default TBody;

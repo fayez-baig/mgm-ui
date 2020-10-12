@@ -1,7 +1,7 @@
 import React from 'react';
-import { TfootProps } from './types';
+import { TFootProps } from './types';
 
-const Tfoot: React.SFC<TfootProps> = ({ children }) => {
+const TFoot: React.FC<TFootProps> = ({ children }) => {
 	return (
 		<tfoot>
 			<tr>{children}</tr>
@@ -9,4 +9,4 @@ const Tfoot: React.SFC<TfootProps> = ({ children }) => {
 	);
 };
 
-export default Tfoot;
+export default TFoot;
