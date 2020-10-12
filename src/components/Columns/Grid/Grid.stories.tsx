@@ -11,7 +11,7 @@ export default {
 			control: { max: 12, min: 1, step: 1, type: 'range' }
 		}
 	},
-	title: 'Layout/Grid'
+	title: 'Columns/Grid'
 };
 
 const colContentClasses = getStyles(['notification', 'is-danger']);

@@ -52,7 +52,7 @@ export default {
 			}
 		}
 	},
-	title: 'Layout/Grid/Col'
+	title: 'Columns/Grid/Col'
 };
 const otherColClasses = getStyles(['notification', 'is-warning']);
 

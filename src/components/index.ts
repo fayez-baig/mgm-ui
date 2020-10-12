@@ -32,5 +32,5 @@ export { default as Select } from './Form/Select/Select';
 export { default as Radio } from './Form/Radio/Radio';
 
 //Layout
-export { default as Row } from './Layout/Grid/Row/Row';
-export { default as Col } from './Layout/Grid/Col/Col';
+export { default as Row } from './Columns/Grid/Row/Row';
+export { default as Col } from './Columns/Grid/Col/Col';
