@@ -31,8 +31,6 @@ export { default as CheckBox } from './Form/CheckBox/CheckBox';
 export { default as Select } from './Form/Select/Select';
 export { default as Radio } from './Form/Radio/Radio';
 
-// for commit purpose
-
 //Layout
 export { default as Row } from './Layout/Grid/Row/Row';
 export { default as Col } from './Layout/Grid/Col/Col';
