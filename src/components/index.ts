@@ -8,6 +8,7 @@ export { default as DeleteButton } from './Elements/DeleteButton/DeleteButton';
 export { default as Text } from './Elements/Text/Text';
 export { default as Title } from './Elements/Title/Title';
 export { default as Container } from './Layout/Container/Container';
+export { default as Section } from './Layout/Section/Section';
 export { default as SubTitle } from './Elements/SubTitle/SubTitle';
 export { default as ProgressBar } from './Elements/ProgressBar/ProgressBar';
 
