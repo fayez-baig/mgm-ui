@@ -5,15 +5,15 @@ import { getStyles } from '../../styles/getStyles';
 const Container: React.FC<ContainerProps> = ({
 	children,
 	isFluid,
-	isFullHd,
+	isFullHD,
 	isMaxDesktop,
 	isMaxWideScreen,
 	isWideScreen
 }) => {
-	let containerClassesStr = 'container,,';
+	let containerClassesStr = 'container,';
 
 	isFluid && (containerClassesStr += `is-fluid,`);
-	isFullHd && (containerClassesStr += `is-fullhd`);
+	isFullHD && (containerClassesStr += `is-fullhd`);
 	isMaxDesktop && (containerClassesStr += `is-max-desktop,`);
 	isMaxWideScreen && (containerClassesStr += `is-max-widescreen,`);
 	isWideScreen && (containerClassesStr += `is-widescreen,`);
