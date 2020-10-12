@@ -2,10 +2,10 @@ import { ReactNode } from 'react';
 
 type SizeValues = 'default' | 'medium' | 'large';
 export interface SectionProps {
-	Size?: SizeValues;
 	children?: ReactNode;
+	size?: SizeValues;
 }
 
 export const defaultProps: SectionProps = {
-	Size: 'default'
+	size: 'default'
 };

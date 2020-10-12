@@ -8,7 +8,7 @@ import SubTitle from './../../Elements/SubTitle/SubTitle';
 const SizeValues = ['default', 'medium', 'large'];
 export default {
 	argTypes: {
-		Size: {
+		size: {
 			control: {
 				options: SizeValues,
 				type: 'inline-radio'
