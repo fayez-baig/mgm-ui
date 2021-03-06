@@ -7,9 +7,9 @@ export interface NavBarMenuProps {
 
 const NavBarMenu: React.SFC<NavBarMenuProps> = ({ children }) => {
 	return (
-		// <div className={getStyles(['navbar-menu'])}>
-		<div className={getStyles(['navbar-start'])}>{children}</div>
-		// </div>
+		<div id='navbarBasicExample' className={getStyles(['navbar-menu'])}>
+			<div className={getStyles(['navbar-start'])}>{children}</div>
+		</div>
 	);
 };
 

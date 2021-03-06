@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import NavBarItem from './NavBar';
 import { NavBarProps } from './types';
 import NavBarMenu from './NavBarMenu';
+import NavBarItemEnd from './NavBarItemEnd';
 import { TagProps } from './../Tag/types';
 
 export default {
@@ -19,6 +20,7 @@ const defaultNavBarTemplate: Story<NavBarProps> = args => (
 			<NavBarItem>Ba</NavBarItem>
 			<NavBarItem>Ca</NavBarItem>
 		</NavBarMenu>
+		<NavBarItemEnd>Test</NavBarItemEnd>
 	</NavBar>
 );
 

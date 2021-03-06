@@ -2,10 +2,10 @@ import React from 'react';
 import { getStyles } from './../../styles/getStyles';
 import { NavBarBrandProps } from './types';
 
-const NavBarBrand: React.SFC<NavBarBrandProps> = () => {
+const NavBarBrand: React.SFC<NavBarBrandProps> = ({ children }) => {
 	return (
 		<div className={getStyles(['navbar-brand'])}>
-			<a
+			{/* <a
 				role='button'
 				className={getStyles(['navbar-burger burger'])}
 				aria-label='menu'
@@ -14,7 +14,8 @@ const NavBarBrand: React.SFC<NavBarBrandProps> = () => {
 				<span aria-hidden='true'></span>
 				<span aria-hidden='true'></span>
 				<span aria-hidden='true'></span>
-			</a>
+			</a> */}
+			{children}
 		</div>
 	);
 };

@@ -3,12 +3,14 @@ import React from 'react';
 import { NavBarProps } from './types';
 import { getStyles } from './../../styles/getStyles';
 
-const NavBar: React.FC<NavBarProps> = ({ children }) => {
+const NavBar: React.FC<NavBarProps> = ({ children, backgroudColor }) => {
 	return (
-		<nav className='navbar' role='navigation' aria-label='main navigation'>
-			<div id='navbarBasicExample' className={getStyles(['navbar-menu'])}>
-				{children}
-				{/* <div className='navbar-end'>
+		<nav
+			className={getStyles(['navbar', 'is-primary'])}
+			role='navigation'
+			aria-label='main navigation'>
+			{children}
+			{/* <div className='navbar-end'>
 					<div className='navbar-item'>
 						<div className='buttons'>
 							<a className='button is-primary'>
@@ -18,7 +20,6 @@ const NavBar: React.FC<NavBarProps> = ({ children }) => {
 						</div>
 					</div>
 				</div> */}
-			</div>
 		</nav>
 	);
 };
