@@ -12,7 +12,7 @@ export { default as Section } from './Layout/Section/Section';
 export { default as SubTitle } from './Elements/SubTitle/SubTitle';
 export { default as ProgressBar } from './Elements/ProgressBar/ProgressBar';
 
-//Tag
+//Tag 
 export { default as Tag } from './Elements/Tag/Tag';
 export { default as AddonTag } from './Elements/Tag/AddonTag';
 export { default as TagWrapper } from './Elements/Tag/TagWrapper';
